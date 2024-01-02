@@ -1,5 +1,6 @@
 package com.mrmlabs.streams;
 
+import java.time.LocalDate;
 import java.util.List;
 /**
  * This is class which provides data to be used in other classes
@@ -58,5 +59,13 @@ public class DataProvider {
                 .email("pm@gmail.com")
                 .id(110L).build();
         return List.of(s1,s2,s3,s4,s5,s6,s7,s8,s9,s10);
+    }
+
+    public static int[] getRandomIntArray(int size) {
+        int[] array = new int[size];
+        for (int j = 0; j < array.length; j++) {
+                array[j]=(int)(Math.random()*10+LocalDate.now().getYear()); 
+        }
+        return array;
     }
 }
