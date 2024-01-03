@@ -16,47 +16,47 @@ public class DataProvider {
         Student s2 = Student.builder().firstName("Grishma")
                 .lasName("Mahalle")
                 .age(5)
-                .email("pm@gmail.com")
+                .email("gm@gmail.com")
                 .id(102L).build();
         Student s3 = Student.builder().firstName("Mahesh")
                 .lasName("Mahalle")
                 .age(40)
-                .email("pm@gmail.com")
+                .email("mm@gmail.com")
                 .id(103L).build();
         Student s4 = Student.builder().firstName("Sam")
                 .lasName("Mahalle")
                 .age(38)
-                .email("pm@gmail.com")
+                .email("sm@gmail.com")
                 .id(104L).build();
         Student s5 = Student.builder().firstName("Yogesh")
                 .lasName("Mahalle")
                 .age(35)
-                .email("pm@gmail.com")
+                .email("ym@gmail.com")
                 .id(105L).build();
         Student s6 = Student.builder().firstName("Ashwini")
                 .lasName("Mahalle")
                 .age(33)
-                .email("pm@gmail.com")
+                .email("am@gmail.com")
                 .id(106L).build();
         Student s7 = Student.builder().firstName("Vansh")
                 .lasName("Mahalle")
                 .age(6)
-                .email("pm@gmail.com")
+                .email("vm@gmail.com")
                 .id(107L).build();
         Student s8 = Student.builder().firstName("Kaustubh")
                 .lasName("Mahalle")
                 .age(5)
-                .email("pm@gmail.com")
+                .email("km@gmail.com")
                 .id(108L).build();
         Student s9 = Student.builder().firstName("Suman")
                 .lasName("Mahalle")
                 .age(55)
-                .email("pm@gmail.com")
+                .email("sum@gmail.com")
                 .id(109L).build();
         Student s10 = Student.builder().firstName("Ram")
                 .lasName("Mahalle")
                 .age(65)
-                .email("pm@gmail.com")
+                .email("ram@gmail.com")
                 .id(110L).build();
         return List.of(s1,s2,s3,s4,s5,s6,s7,s8,s9,s10);
     }
