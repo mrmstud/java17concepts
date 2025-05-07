@@ -1,19 +1,31 @@
 package com.mrmlabs;
 
-import java.util.stream.Stream;
+/**
+ * Main class demonstrating the use of Java's logging framework.
+ * Logs a "Hello world!" message and prints the current Java and JDK versions.
+ */
 
-import com.mrmlabs.streams.DataProvider;
+import java.util.logging.Logger;
+import java.util.logging.Level;
 
 public class Main {
-    public static void main(String[] args) {
-        System.out.println("Hello world!");
+    private static final Logger logger = Logger.getLogger(Main.class.getName());
 
-        //test getIntArray
-        int[] randomIntArray = DataProvider.getRandomIntArray(5);
-        for (int i : randomIntArray) {
-           System.out.println(i);
-        }
+    public static void main(String[] args) {
+        logger.log(Level.INFO, "Hello world!");
+
+        // Print Java and JDK version using logger
+        logger.log(Level.INFO, "Java Version: {0}", System.getProperty("java.version"));
+        logger.log(Level.INFO, "JDK Version: {0}", System.getProperty("java.specification.version"));
+
+        // Print system details
+        printSystemDetails();
     }
 
-    
+    private static void printSystemDetails() {
+        logger.log(Level.INFO, "OS Name: {0}", System.getProperty("os.name"));
+        logger.log(Level.INFO, "OS Version: {0}", System.getProperty("os.version"));
+        logger.log(Level.INFO, "User Name: {0}", System.getProperty("user.name"));
+        logger.log(Level.INFO, "User Home Directory: {0}", System.getProperty("user.home"));
+    }
 }

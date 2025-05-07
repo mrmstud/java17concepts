@@ -1,1 +1,11 @@
 com\mrmlabs\Main.class
+com\mrmlabs\streams\FindAvgAgeOfStudOlderThan20.class
+com\mrmlabs\streams\Student$StudentBuilder.class
+com\mrmlabs\collectors\CollectorsDemo.class
+com\mrmlabs\sorting\SortingArraysDemo.class
+com\mrmlabs\streams\FindAListOfStudentsWithAgeGreaterThan20AndLessThan40.class
+com\mrmlabs\streams\StreamsDemo.class
+com\mrmlabs\streams\DataProvider.class
+com\mrmlabs\streams\Student.class
+com\mrmlabs\arrays\ReverseArray.class
+com\mrmlabs\streams\FilterMapSort.class
